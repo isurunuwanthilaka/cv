@@ -4,7 +4,7 @@ plugins:
 relative_links:
   enabled: true
   collections: true
-baseurl: "/academics"
+baseurl: "/cv"
 include:
   - CONTRIBUTING.md
   - README.md
