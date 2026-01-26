@@ -1,0 +1,49 @@
+name: Build CV
+
+on:
+  push:
+    branches: [ main, master, gh-pages ]
+    paths:
+      - 'cv/resume.tex'
+      - '.github/workflows/build-cv.yml'
+  pull_request:
+    branches: [ main, master, gh-pages ]
+    paths:
+      - 'cv/resume.tex'
+      - '.github/workflows/build-cv.yml'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Required to commit and push PDF back to repository
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Compile LaTeX document
+      uses: xu-cheng/latex-action@v2
+      with:
+        root_file: resume.tex
+        working_directory: cv
+        
+    - name: Upload PDF artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: resume
+        path: cv/resume.pdf
+        
+    - name: Commit and push PDF
+      if: github.event_name == 'push'
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add cv/resume.pdf
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Auto-update CV PDF [skip ci]"
+          git push
+        fi
