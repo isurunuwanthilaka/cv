@@ -1,131 +1,165 @@
-\documentclass[a4paper,10pt]{article}
-\usepackage[left=1in, right=1in, top=1in, bottom=1in]{geometry}
+\documentclass[a4paper,11pt]{article}
+\usepackage[left=0.75in, right=0.75in, top=0.75in, bottom=0.75in]{geometry}
 \usepackage{enumitem}
 \usepackage{titling}
 \usepackage{hyperref}
-\usepackage{fontawesome} % For LinkedIn icon
 
 \pagestyle{empty}
 
-% Custom section command
-\newcommand{\ressection}[1]{\section*{#1}\vspace{-0.5em}\hrule\vspace{0.5em}}
+% Simple section command for ATS compatibility
+\newcommand{\ressection}[1]{
+  \vspace{0.3em}
+  \noindent\textbf{\large #1}
+  \vspace{0.2em}
+  \par
+}
 
-% Custom itemize environment with increased item separation
+% Simple itemize environment
 \newenvironment{myitemize}
-  {\begin{itemize}[left=0pt,label=,itemsep=5pt]}
+  {\begin{itemize}[leftmargin=0.2in,label=$\bullet$,itemsep=3pt,topsep=3pt]}
   {\end{itemize}}
 
 \begin{document}
 
+% Header - ATS friendly format
 \begin{center}
-  {\LARGE\bfseries Isuru Nuwanthilaka} \\
-  \vspace{0.2em}
-  {\Large Technical Lead - AI} \\
-  \vspace{0.5em}
-  \href{https://www.linkedin.com/in/isurunuwanthilaka}{\faLinkedin \,}
-  \href{https://github.com/isurunuwanthilaka}{\faGithub \,}
+  {\LARGE\textbf{ISURU NUWANTHILAKA}} \\
+  \vspace{0.3em}
+  Email: isurunuwanthilaka@gmail.com $|$ Phone: +94 77 387 1605 \\
+  LinkedIn: linkedin.com/in/isurunuwanthilaka $|$ GitHub: github.com/isurunuwanthilaka \\
+  Location: Sri Lanka
 \end{center}
 
-\ressection{Personal Information}
-\begin{myitemize}
-    \item \textbf{Email:} \href{mailto:isurunuwanthilaka@gmail.com}{isurunuwanthilaka@gmail.com}
-    \item \textbf{Phone:} +94 77 387 1605
-    \item \textbf{Date of Birth:} February 19, 1995
-    \item \textbf{Location:} Sri Lanka
-\end{myitemize}
+\vspace{0.3em}
 
-\ressection{Education}
+\ressection{PROFESSIONAL SUMMARY}
+Technical Lead with 6+ years of experience in software engineering and AI/ML. Currently leading AI initiatives at Rootcode AI. Proven track record in system architecture, team leadership, and delivering scalable enterprise solutions. Expertise in AI/ML, Java, Python, cloud technologies, and microservices architecture.
+
+\ressection{TECHNICAL SKILLS}
+\textbf{Programming Languages:} Python, Java, PHP, JavaScript, Go, Scala \\
+\textbf{AI/ML Technologies:} Deep Learning, NLP, Computer Vision, TensorFlow, PyTorch, Scikit-learn \\
+\textbf{Frameworks \& Libraries:} Spring Boot, React, GraphQL, Pandas, NumPy \\
+\textbf{Databases:} PostgreSQL, MySQL, MongoDB \\
+\textbf{Cloud \& DevOps:} AWS, Docker, Kubernetes, Jenkins, Ansible, CI/CD \\
+\textbf{Architecture:} Microservices, SOA, System Design, RESTful APIs
+
+\ressection{EDUCATION}
 \begin{myitemize}
-    \item \textbf{MSc in Computer Science (Software Architecture Specialization)} \\
-          2021 -- 2023 \\
-          University of Moratuwa
-    \item \textbf{BSc(Hons) in Engineering (Electronic and Telecommunication Engineering)} \\
-          2015 -- 2019 \\
-          University of Moratuwa
+    \item \textbf{Master of Science in Computer Science} -- Software Architecture Specialization \\
+          University of Moratuwa, Sri Lanka \\
+          2021 - 2023
+    \item \textbf{Bachelor of Science (Honours) in Engineering} -- Electronic and Telecommunication Engineering \\
+          University of Moratuwa, Sri Lanka \\
+          2015 - 2019
     \item \textbf{GCE Advanced Level} \\
+          Ananda College, Colombo 10, Sri Lanka \\
           2014 \\
-          Ananda College, Colombo 10 \\
           Ranked 36th in Sri Lanka, 4 A passes in Combined Mathematics, Physics, Chemistry, General English
 \end{myitemize}
 
-\ressection{Experience}
+\ressection{PROFESSIONAL EXPERIENCE}
 \begin{myitemize}
     \item \textbf{Technical Lead - AI} \\
-          Present \\
           Rootcode AI, Sri Lanka \\
-          Leading AI initiatives and technical teams in developing cutting-edge AI solutions \\
-          Technology: AI/ML, Python, Deep Learning, NLP, Computer Vision
+          2025 - Present
+          \begin{itemize}[leftmargin=0.3in,label=$\circ$,itemsep=2pt]
+              \item Lead AI initiatives and technical teams in developing cutting-edge artificial intelligence solutions
+              \item Design and implement machine learning models for NLP and computer vision applications
+              \item Architect scalable AI systems and oversee technical strategy for AI projects
+              \item Mentor engineering teams and drive adoption of AI/ML best practices
+          \end{itemize}
+          \textit{Technologies: Python, TensorFlow, PyTorch, Deep Learning, NLP, Computer Vision, AWS}
+          
     \item \textbf{Technical Lead} \\
-          2024 - 2025 (Remote) \\
-          Cut+Dry Inc, San Francisco, US \\
-          Led technical teams and drove key technical decisions for enterprise solutions \\
-          Technology: Java, PHP, React, Springboot, GraphQL, System Architecture
+          Cut+Dry Inc, San Francisco, CA (Remote) \\
+          2024 - 2025
+          \begin{itemize}[leftmargin=0.3in,label=$\circ$,itemsep=2pt]
+              \item Led technical teams and drove key architectural decisions for enterprise B2B solutions
+              \item Designed and implemented microservices architecture for scalable food supply chain platform
+              \item Established technical standards and best practices across engineering teams
+              \item Collaborated with stakeholders to align technical solutions with business objectives
+          \end{itemize}
+          \textit{Technologies: Java, Spring Boot, PHP, React, GraphQL, PostgreSQL, System Architecture}
+          
     \item \textbf{Software Engineer II} \\
-          2021 Oct - 2024 (Remote) \\
-          Cut+Dry Inc, San Francisco, US \\
-          Contributed to Payments, Data projects and Integrations \\
-          Technology: Java, PHP, React, Springboot, GraphQL
+          Cut+Dry Inc, San Francisco, CA (Remote) \\
+          October 2021 - 2024
+          \begin{itemize}[leftmargin=0.3in,label=$\circ$,itemsep=2pt]
+              \item Developed and maintained payment processing systems handling millions in transactions
+              \item Built data integration pipelines and ETL processes for enterprise clients
+              \item Implemented GraphQL APIs and microservices for core business functions
+              \item Contributed to architectural decisions for scalability and performance optimization
+          \end{itemize}
+          \textit{Technologies: Java, Spring Boot, PHP, React, GraphQL, MySQL, Docker}
+          
     \item \textbf{Software Engineer} \\
-          2020 Mar - 2021 Sep (On-site) \\
           MillenniumIT ESP, Sri Lanka \\
-          Design and develop microservices for PeoTV Go project \\
-          Technology: Java 11, SpringBoot, Postgres, Docker, Python, Go, SOA, Jenkins
-    \item \textbf{Intern - Software Engineering} \\
-          2018 Jun - 2018 Dec (On-site) \\
+          March 2020 - September 2021
+          \begin{itemize}[leftmargin=0.3in,label=$\circ$,itemsep=2pt]
+              \item Designed and developed microservices for PeoTV Go OTT streaming platform
+              \item Implemented RESTful APIs and backend services using Spring Boot
+              \item Collaborated with DevOps team for CI/CD pipeline setup and deployment automation
+              \item Optimized database queries and improved system performance
+          \end{itemize}
+          \textit{Technologies: Java 11, Spring Boot, PostgreSQL, Docker, Python, Go, Jenkins}
+          
+    \item \textbf{Software Engineering Intern} \\
           MillenniumIT ESP, Sri Lanka \\
-          Implemented and integrated MiWiFi Quota Management System \\
-          Technology: Java 8, Docker, Postgres, Scala, AAA server - Radiator, Python, Go
+          June 2018 - December 2018
+          \begin{itemize}[leftmargin=0.3in,label=$\circ$,itemsep=2pt]
+              \item Implemented and integrated MiWiFi Quota Management System
+              \item Developed backend services and database integration using Java and PostgreSQL
+              \item Worked with AAA server (Radiator) for authentication and authorization
+          \end{itemize}
+          \textit{Technologies: Java 8, Docker, PostgreSQL, Scala, Python, Go}
 \end{myitemize}
 
-\ressection{Projects}
+\ressection{KEY PROJECTS}
 \begin{myitemize}
-    \item \textbf{Lead contributor of cutanddry.com} \\
-          2021 \\
-          Cut+Dry Inc \\
-          Contributed to the development of cutanddry.com products - Pay, Integration Hub, Push notifications, and Data Projects
-    \item \textbf{Contributor of PeoTVGo OTT Solution} \\
-          2020-2021 \\
-          MillenniumIT ESP \\
-          Developed PeoTVGo OTT Solution for SLTMobitel using Java 11 (Springboot), Python, Postgres, Linux, Jenkins, Ansible, Docker, Git, Postman
-    \item \textbf{Dialog Datathon - Smart City Planning based on CDR} \\
-          2019 \\
-          Developed machine learning models for smart city planning tasks \\
-          Skills: Python, Pandas, Scikit-learn, Seaborn, Azure DSVM
+    \item \textbf{AI/ML Solutions Development} -- Rootcode AI (2025 - Present)
+          \begin{itemize}[leftmargin=0.3in,label=$\circ$,itemsep=2pt]
+              \item Leading development of enterprise AI solutions using deep learning and NLP
+              \item Implementing computer vision models for automated image analysis
+          \end{itemize}
+          
+    \item \textbf{Payment Processing Platform} -- Cut+Dry Inc (2021 - 2024)
+          \begin{itemize}[leftmargin=0.3in,label=$\circ$,itemsep=2pt]
+              \item Developed payment processing infrastructure handling high-volume transactions
+              \item Built integration hub connecting multiple third-party payment providers
+              \item Implemented data analytics pipelines for business intelligence
+          \end{itemize}
+          
+    \item \textbf{PeoTV Go OTT Platform} -- MillenniumIT ESP (2020 - 2021)
+          \begin{itemize}[leftmargin=0.3in,label=$\circ$,itemsep=2pt]
+              \item Developed microservices architecture for streaming platform serving SLTMobitel
+              \item Implemented RESTful APIs and backend services with Java Spring Boot
+              \item Deployed using Docker, Jenkins, and Ansible automation
+          \end{itemize}
+          
+    \item \textbf{Smart City Planning ML Model} -- Dialog Datathon (2019)
+          \begin{itemize}[leftmargin=0.3in,label=$\circ$,itemsep=2pt]
+              \item Developed machine learning models for urban planning based on CDR data analysis
+              \item Used Python, Pandas, Scikit-learn for data processing and model development
+          \end{itemize}
 \end{myitemize}
 
-\ressection{Awards}
+\ressection{CERTIFICATIONS}
 \begin{myitemize}
-    \item \textbf{IEEEXtreme 11.0 - World Rank: 324} \\
-          2018, University of Moratuwa \\
-          24 Hour International Programming Competition organized by IEEE. Member of the 3-member team CLIC
-    \item \textbf{MoraExtreme Programming Competition} \\
-          2016-2017, University of Moratuwa \\
-          Member of Team CLIC, 6th place (2016), 2nd place (2017)
-    \item \textbf{Dialog Merit scholarship 2012} \\
-          2012, Ananda College, Colombo 10 \\
-          Dialog Merit scholarship for Colombo district based on special achievements at G.C.E. Ordinary Level 2011
-    \item \textbf{Class First and Subject Prizes} \\
-          2007-2014, Ananda College, Colombo 10 \\
-          General Proficiency Prize for 6 years, Subject Prizes in Chemistry, Health and Physical Education, Buddhism, Science, Tamil
-    \item \textbf{3rd SAARC-Bronze Medal and TIGSKC - Silver Medal} \\
-          2007, Ananda College, Colombo 10 \\
-          3rd SAARC open karate-do championship 2007, Allahabad, India. TIGSKC - Silver Medal in Triangular and International Goodwill School karate championship, Sri Lanka 2007
+    \item \textbf{Deep Learning Nanodegree} -- Udacity, 2020 \\
+          Neural Networks, CNN, RNN, GAN, AWS SageMaker deployment
+    \item \textbf{Convolutional Neural Networks} -- Coursera (DeepLearning.ai), 2019
+    \item \textbf{Machine Learning} -- Coursera (Stanford University, Andrew Ng), 2018
+    \item \textbf{Core Database Concepts} -- Coursera (Arizona State University), 2019
 \end{myitemize}
 
-\ressection{Certifications}
+\ressection{AWARDS AND RECOGNITION}
 \begin{myitemize}
-    \item \textbf{Deep Learning Nanodegree} \\
-          2020, Udacity \\
-          NN, CNN, RNN, GAN, and hands-on AWS SageMaker deployment. Completion ID: \href{https://graduation.udacity.com/confirm/434M3LSP}{434M3LSP}
-    \item \textbf{Convolutional Neural Networks} \\
-          2019, Coursera \\
-          Offered by DeepLearning.ai. Completion ID: \href{https://www.coursera.org/account/accomplishments/verify/CK6PDQEX3S2M}{CK6PDQEX3S2M}
-    \item \textbf{Core Database Concepts} \\
-          2019, Coursera \\
-          Offered by Arizona State University. Completion ID: \href{https://www.coursera.org/account/accomplishments/verify/CUGAGTPYMYCC}{CUGAGTPYMYCC}
-    \item \textbf{Machine Learning} \\
-          2018, Coursera \\
-          Offered by Stanford, Andrew Ng. Completion ID: \href{https://www.coursera.org/account/accomplishments/verify/LYJZCS8BPSLD}{LYJZCS8BPSLD}
+    \item \textbf{IEEEXtreme 11.0} -- World Rank 324 (2018) \\
+          24-hour international programming competition, University of Moratuwa
+    \item \textbf{MoraExtreme Programming Competition} -- 2nd Place (2017), 6th Place (2016) \\
+          University of Moratuwa competitive programming competition
+    \item \textbf{Dialog Merit Scholarship} -- 2012 \\
+          Awarded for academic excellence at GCE Ordinary Level
 \end{myitemize}
 
 \end{document}
