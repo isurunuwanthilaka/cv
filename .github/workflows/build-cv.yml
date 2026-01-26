@@ -16,6 +16,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Required to commit and push PDF back to repository
     
     steps:
     - name: Checkout repository
