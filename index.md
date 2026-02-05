@@ -6,7 +6,7 @@
 📍 Sri Lanka
 
 <div style="text-align: center; margin: 30px 0;">
-  <a href="cv/resume.pdf" download style="background-color: #4CAF50; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius: 8px; font-weight: bold;">
+  <a href="cv/IsuruNuwanthilaka2026resume.pdf" download style="background-color: #4CAF50; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius: 8px; font-weight: bold;">
     📄 Download CV (PDF)
   </a>
 </div>
@@ -155,7 +155,7 @@ Ranked 36th in Sri Lanka, 4 A passes in Combined Mathematics, Physics, Chemistry
 ---
 
 <div style="text-align: center; margin: 30px 0;">
-  <a href="cv/resume.pdf" download style="background-color: #4CAF50; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius: 8px; font-weight: bold;">
+  <a href="cv/IsuruNuwanthilaka2026resume.pdf" download style="background-color: #4CAF50; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius: 8px; font-weight: bold;">
     📄 Download CV (PDF)
   </a>
 </div>
