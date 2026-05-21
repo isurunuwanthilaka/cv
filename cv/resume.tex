@@ -1,5 +1,5 @@
-\documentclass[a4paper,11pt]{article}
-\usepackage[left=0.75in, right=0.75in, top=0.75in, bottom=0.75in]{geometry}
+\documentclass[a4paper,10pt]{article}
+\usepackage[left=0.6in, right=0.6in, top=0.6in, bottom=0.6in]{geometry}
 \usepackage{enumitem}
 \usepackage{titling}
 \usepackage{hyperref}
@@ -8,161 +8,140 @@
 
 % Simple section command for ATS compatibility
 \newcommand{\ressection}[1]{
-  \vspace{0.3em}
-  \noindent\textbf{\large #1}
   \vspace{0.2em}
+  \noindent\textbf{\large #1}
+  \vspace{0.1em}
   \par
 }
 
-% Simple itemize environment
-\newenvironment{myitemize}
-  {\begin{itemize}[leftmargin=0.2in,label=$\bullet$,itemsep=3pt,topsep=3pt]}
-  {\end{itemize}}
+\setlist[itemize,1]{leftmargin=0.18in,label=$\bullet$,itemsep=2pt,topsep=2pt}
 
 \begin{document}
 
 % Header - ATS friendly format
 \begin{center}
   {\LARGE\textbf{ISURU NUWANTHILAKA}} \\
-  \vspace{0.3em}
+  \vspace{0.2em}
   Email: isurunuwanthilaka@gmail.com | Phone: +94 77 387 1605 \\
   LinkedIn: linkedin.com/in/isurunuwanthilaka | GitHub: github.com/isurunuwanthilaka \\
   Location: Sri Lanka
 \end{center}
 
-\vspace{0.3em}
-
-\ressection{PROFESSIONAL SUMMARY}
-\noindent Technical Lead with 6+ years of experience in software engineering and AI/ML. Currently leading AI initiatives at Rootcode AI. Proven track record in system architecture, team leadership, and delivering scalable enterprise solutions. Expertise in AI/ML, Java, Python, cloud technologies, and microservices architecture.
-
 \vspace{0.2em}
-\ressection{TECHNICAL SKILLS}
-\noindent\textbf{Programming Languages:} Python, Java, PHP, JavaScript, Go \\
-\noindent\textbf{AI/ML Technologies:} Deep Learning, Generative AI, Agentic AI \\
-\noindent\textbf{Frameworks \& Libraries:} Spring Boot, React, GraphQL \\
-\noindent\textbf{Databases:} PostgreSQL, MySQL, MongoDB \\
-\noindent\textbf{Cloud \& DevOps:} AWS, Docker, Jenkins, Ansible, CI/CD \\
-\noindent\textbf{Architecture:} Microservices, System Design, RESTful APIs
+\ressection{PROFESSIONAL SUMMARY}
+\noindent Software engineering leader with 6+ years of experience designing scalable backend, AI, payment, and data integration systems. Strong foundation in software architecture, microservices, cloud engineering, and technical leadership, with hands-on experience across Java, Python, Go, AWS and Generative AI. Currently leading AI solution architecture and engineering delivery at Rootcode AI.
 
-\vspace{0.3em}
-\ressection{EDUCATION}
-\begin{myitemize}
-    \item \textbf{Master of Science in Computer Science} -- Software Architecture Specialization \\
-          University of Moratuwa, Sri Lanka \\
-          2021 - 2023
-    \item \textbf{Bachelor of Science (Honours) in Engineering} -- Electronic and Telecommunication Engineering \\
-          University of Moratuwa, Sri Lanka \\
-          2015 - 2019
-    \item \textbf{GCE Advanced Level} \\
-          Ananda College, Colombo 10, Sri Lanka \\
-          2014 \\
-          Ranked 36th in Sri Lanka, 4 A passes in Combined Mathematics, Physics, Chemistry, General English
-\end{myitemize}
-
-\vspace{0.3em}
+\vspace{0.5em}
 \ressection{PROFESSIONAL EXPERIENCE}
-\begin{myitemize}
+\begin{itemize}
     \item \textbf{Technical Lead - AI} \\
           Rootcode AI, Sri Lanka \\
-          2025 Nov - Present
-          \begin{itemize}[leftmargin=0.3in,label=$\circ$,itemsep=2pt]
-              \item Lead AI initiatives and technical teams in developing cutting-edge artificial intelligence solutions
-              \item Design and implement Gen AI/Agentic AI applications for European enterprise clients
-              \item Architect scalable AI systems and oversee technical strategy for AI projects
-              \item Mentor engineering teams and drive adoption of AI/ML best practices
+          Nov 2025 -- Present
+          \begin{itemize}[leftmargin=0.25in,label=$\circ$,itemsep=1pt]
+              \item Lead architecture and delivery of enterprise AI solutions for European clients, translating business requirements into scalable technical designs
+              \item Design Gen AI and Agentic AI application architectures, including model integration, model finetuning, service boundaries, deployment approach, and cloud considerations
+              \item Guide engineering teams on AI/ML engineering practices, solution design trade-offs, code quality, and production readiness
+              \item Collaborate with stakeholders to define technical roadmaps, evaluate feasibility, and align AI initiatives with business outcomes
           \end{itemize}
-          \textit{Technologies: Python, TensorFlow, PyTorch, Deep Learning, NLP, Computer Vision, AWS}
+          \textit{Technologies: Python, Azure, LangChain, LangGraph, Unsloth, TensorFlow}
           
     \item \textbf{Technical Lead} \\
           Cut+Dry Inc, San Francisco, CA (Remote) \\
-          2024 Oct - 2025 Nov
-          \begin{itemize}[leftmargin=0.3in,label=$\circ$,itemsep=2pt]
-              \item Led technical teams (Feature pod and Payment pod) and drove key architectural decisions for enterprise B2B solutions
-              \item Designed and implemented features for payment processing and data integration platforms
-              \item Collaborated with stakeholders to align technical solutions with business objectives
+          Oct 2024 -- Nov 2025
+          \begin{itemize}[leftmargin=0.25in,label=$\circ$,itemsep=1pt]
+              \item Led Feature and Payment engineering pods, owning technical direction, delivery planning, and architectural decisions for B2B platform capabilities
+              \item Designed backend services and integration patterns for payment processing, data synchronization, and enterprise customer workflows
+              \item Reviewed solution designs and code to improve reliability, scalability, maintainability, and cross-team engineering consistency
           \end{itemize}
           \textit{Technologies: Java, Spring Boot, PHP, React, GraphQL, PostgreSQL, System Architecture}
           
     \item \textbf{Software Engineer II} \\
           Cut+Dry Inc, San Francisco, CA (Remote) \\
-          2021 Oct - 2024 Oct
-          \begin{itemize}[leftmargin=0.3in,label=$\circ$,itemsep=2pt]
-              \item Developed and maintained payment processing systems
-              \item Built data integration pipelines and ETL processes for enterprise clients
-              \item Implemented GraphQL APIs and microservices for core business functions
-              \item Contributed to architectural decisions for scalability and performance optimization
+          Oct 2021 -- Oct 2024
+          \begin{itemize}[leftmargin=0.25in,label=$\circ$,itemsep=1pt]
+              \item Developed and maintained payment processing services and GraphQL APIs for core B2B commerce workflows
+              \item Built data integration pipelines and ETL processes connecting enterprise customers, suppliers, and third-party platforms
+              \item Contributed to microservice design, database modeling, API design, and performance optimization for growing platform needs
+              \item Improved maintainability through modular implementation, production issue analysis, and cross-functional collaboration
           \end{itemize}
           \textit{Technologies: Java, Spring Boot, PHP, React, GraphQL, MySQL, Docker}
           
     \item \textbf{Software Engineer} \\
           MillenniumIT ESP, Sri Lanka \\
-          March 2020 - September 2021
-          \begin{itemize}[leftmargin=0.3in,label=$\circ$,itemsep=2pt]
-              \item Designed and developed microservices for PeoTV Go OTT streaming platform
-              \item Implemented RESTful APIs and backend services using Spring Boot
-              \item Collaborated with DevOps team for CI/CD pipeline setup and deployment automation
-              \item Optimized database queries and improved system performance
+          Mar 2020 -- Sep 2021
+          \begin{itemize}[leftmargin=0.25in,label=$\circ$,itemsep=1pt]
+              \item Designed and developed microservices for the PeoTV Go OTT streaming platform serving SLTMobitel users
+              \item Implemented RESTful APIs and backend services using Java 11, Spring Boot, PostgreSQL, and Docker
+              \item Collaborated with DevOps teams on CI/CD pipelines, deployment automation, and environment readiness
+              \item Optimized database queries and backend service performance to improve platform reliability and responsiveness
           \end{itemize}
           \textit{Technologies: Java 11, Spring Boot, PostgreSQL, Docker, Python, Go, Jenkins}
           
     \item \textbf{Software Engineering Intern} \\
           MillenniumIT ESP, Sri Lanka \\
-          June 2018 - December 2018
-          \begin{itemize}[leftmargin=0.3in,label=$\circ$,itemsep=2pt]
-              \item Implemented and integrated MiWiFi Quota Management System
-              \item Developed backend services and database integration using Java and PostgreSQL
-              \item Worked with AAA server (Radiator) for authentication and authorization
-          \end{itemize}
+          Jun 2018 -- Dec 2018
+          Implemented MiWiFi quota management backend services and PostgreSQL integrations with AAA server support. \\
           \textit{Technologies: Java 8, Docker, PostgreSQL, Scala, Python, Go}
-\end{myitemize}
+\end{itemize}
 
-\vspace{0.3em}
-\ressection{KEY PROJECTS}
-\begin{myitemize}
-    \item \textbf{AI/ML Solutions Development} -- Rootcode AI (2025 - Present)
-          \begin{itemize}[leftmargin=0.3in,label=$\circ$,itemsep=2pt]
-              \item Leading development of enterprise AI solutions using open-source LLM models by finetuning
-              \item Designing AI architectures for multiple applications.
+\vspace{0.5em}
+\ressection{PROJECTS}
+\begin{itemize}
+    \item \textbf{Enterprise CAD generation AI Solution } -- Rootcode AI (2025 -- 2026)
+          \begin{itemize}[leftmargin=0.25in,label=$\circ$,itemsep=1pt]
+              \item Architecting AI applications using Claude/GPT LLMs, fine-tuning workflows, and production-ready service designs
+              \item Defining reusable architecture patterns for Gen AI and Agentic AI applications across client use cases for CAD design generation
           \end{itemize}
           
-    \item \textbf{Payment Processing Platform} -- Cut+Dry Inc (2021 - 2024)
-          \begin{itemize}[leftmargin=0.3in,label=$\circ$,itemsep=2pt]
-              \item Developed payment processing infrastructure handling high-volume transactions
-              \item Built integration hub connecting multiple third-party payment providers
-              \item Implemented data analytics pipelines for business intelligence
-          \end{itemize}
-          
-    \item \textbf{PeoTV Go OTT Platform} -- MillenniumIT ESP (2020 - 2021)
-          \begin{itemize}[leftmargin=0.3in,label=$\circ$,itemsep=2pt]
-              \item Developed microservices architecture for streaming platform serving SLTMobitel
-              \item Implemented RESTful APIs and backend services with Java Spring Boot
-              \item Deployed using Docker, Jenkins, and Ansible automation
+    \item \textbf{PeoTV Go OTT Platform} -- MillenniumIT ESP (2020 -- 2021)
+          \begin{itemize}[leftmargin=0.25in,label=$\circ$,itemsep=1pt]
+              \item Developed backend microservices and RESTful APIs for a national OTT streaming platform
+              \item Supported containerized deployment and automation using Docker, Jenkins, and Ansible
           \end{itemize}
           
     \item \textbf{Smart City Planning ML Model} -- Dialog Datathon (2019)
-          \begin{itemize}[leftmargin=0.3in,label=$\circ$,itemsep=2pt]
+          \begin{itemize}[leftmargin=0.25in,label=$\circ$,itemsep=1pt]
               \item Developed machine learning models for urban planning based on CDR data analysis
               \item Used Python, Pandas, Scikit-learn for data processing and model development
           \end{itemize}
-\end{myitemize}
+\end{itemize}
 
+\vspace{0.5em}
+\ressection{EDUCATION}
+\begin{itemize}
+    \item \textbf{Master of Science in Computer Science} -- Software Architecture Specialization \\
+          University of Moratuwa, Sri Lanka, 2021 -- 2023
+    \item \textbf{Bachelor of Science (Honours) in Engineering} -- Electronic and Telecommunication Engineering \\
+          University of Moratuwa, Sri Lanka, 2015 -- 2019
+    \item \textbf{GCE Advanced Level} -- Ananda College, Colombo, 2014; Island rank 36
+\end{itemize}
+
+\vspace{0.5em}
+\ressection{TECHNICAL SKILLS}
+\begin{itemize}
+    \item \textbf{Programming Languages:} Python, Java, PHP, JavaScript, Go
+    \item \textbf{Architecture \& Design:} Microservices, System Design, RESTful APIs, GraphQL APIs, Distributed Systems
+    \item \textbf{AI/ML Technologies:} Generative AI, Agentic AI, Deep Learning, NLP, Computer Vision
+    \item \textbf{Frameworks \& Libraries:} Spring Boot, React, TensorFlow, PyTorch
+    \item \textbf{Databases:} PostgreSQL, MySQL, MongoDB
+    \item \textbf{Cloud \& DevOps:} AWS, Docker, Jenkins, Ansible, CI/CD
+\end{itemize}
+
+\vspace{0.5em}
 \ressection{CERTIFICATIONS}
-\begin{myitemize}
-    \item \textbf{Deep Learning Nanodegree} -- Udacity, 2020 \\
-          Neural Networks, CNN, RNN, GAN, AWS SageMaker deployment
+\begin{itemize}
+    \item \textbf{Deep Learning Nanodegree} -- Udacity, 2020; Neural Networks, CNN, RNN, GAN, AWS SageMaker
     \item \textbf{Convolutional Neural Networks} -- Coursera (DeepLearning.ai), 2019
     \item \textbf{Machine Learning} -- Coursera (Stanford University, Andrew Ng), 2018
     \item \textbf{Core Database Concepts} -- Coursera (Arizona State University), 2019
-\end{myitemize}
-\vspace{0.2em}
+\end{itemize}
+
+\vspace{0.5em}
 \ressection{AWARDS AND RECOGNITION}
-\begin{myitemize}
-    \item \textbf{IEEEXtreme 11.0} -- World Rank 324 (2018) \\
-          24-hour international programming competition, University of Moratuwa
-    \item \textbf{MoraExtreme Programming Competition} -- 2nd Place (2017), 6th Place (2016) \\
-          University of Moratuwa competitive programming competition
-    \item \textbf{Dialog Merit Scholarship} -- 2012 \\
-          Awarded for academic excellence at GCE Ordinary Level
-\end{myitemize}
+\begin{itemize}
+    \item \textbf{IEEEXtreme 11.0} -- World Rank 324 (2018), 24-hour international programming competition
+    \item \textbf{MoraExtreme Programming Competition} -- 2nd Place (2017), 6th Place (2016)
+    \item \textbf{Dialog Merit Scholarship} -- 2012, awarded for academic excellence at GCE Ordinary Level
+\end{itemize}
 
 \end{document}
